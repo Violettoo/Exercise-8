@@ -2,9 +2,9 @@
 
 Question 1: The Definition of Metadata 
 
-  i) Why must metadata be a static identifier? Metadata must be static because MongoDB uses it as a hard routing key to bucket incoming sequential streams. Under the Bucket Pattern, the engine collapses a sequence of sequential events from the exact same source into a single compressed block on your disk layout.
+    i) Why must metadata be a static identifier? Metadata must be static because MongoDB uses it as a hard routing key to bucket incoming sequential streams. Under the Bucket Pattern, the engine collapses a sequence of sequential events from the exact same source into a single compressed block on your disk layout.
   
-  ii) What happens if it changes every second? If you map a rapidly changing metric (like temperature) to the metaField, every fractional change in the reading forces the database to open a completely new bucket allocation on the hard drive. This breaks data compression completely, wastes memory, and slows processing speeds.  
+    ii) What happens if it changes every second? If you map a rapidly changing metric (like temperature) to the metaField, every fractional change in the reading forces the database to open a completely new bucket allocation on the hard drive. This breaks data compression completely, wastes memory, and slows processing speeds.  
   
   Question 2: Middleware vs. Edge Timestamping   
   
