@@ -6,7 +6,7 @@ Question 1: The Definition of Metadata
   
     ii) What happens if it changes every second? If you map a rapidly changing metric (like temperature) to the metaField, every fractional change in the reading forces the database to open a completely new bucket allocation on the hard drive. This breaks data compression completely, wastes memory, and slows processing speeds.  
   
-  Question 2: Middleware vs. Edge Timestamping   
+Question 2: Middleware vs. Edge Timestamping   
   
     i) Why is server-side timestamping safer? Cheap edge hardware, like a basic $5 ESP32 microcontroller, does not contain an internal battery-backed Real-Time Clock (RTC) hardware module. If the microcontroller resets or experiences a power brownout, its system timer resets to zero.  
     
